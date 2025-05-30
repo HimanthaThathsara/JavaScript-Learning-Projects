@@ -23,7 +23,7 @@ const weatherHumidity = document.getElementById("Weather_humidity_accoding_to_th
 const uvIndexElement = document.getElementById("UV_Index_accoding_to_the_weather");
 const uvIndexDescription = document.getElementById("UV_Index_description_accoding_to_the_weather");
 const uvIndexLowToday = document.getElementById("UV_Index_Today_Low_accoding_to_the_weather");
-const  uvIndexMediumToday = document.getElementById("UV_Index_Today_Medium_accoding_to_the_weather");
+const uvIndexMediumToday = document.getElementById("UV_Index_Today_Medium_accoding_to_the_weather");
 const uvIndexHighToday = document.getElementById("UV_Index_Today_High_accoding_to_the_weather");
 
 // Current Air Index Elements In Air Card
@@ -81,7 +81,7 @@ function clock() {
   // display user machine time and date
   if (hours < 10) {
     currentTime.innerHTML = `0${hours}:${minutes}:${seconds}`;
-  } 
+  }
 
   if (minutes < 10) {
     currentTime.innerHTML = `${hours}:0${minutes}:${seconds}`;
@@ -95,17 +95,17 @@ function clock() {
   // get user machine time and date and display WellCome Text in the page 
   if (hours >= 0 && hours < 12) {
     Good_Wellcome_text = "Good Morning 👋";
-  } 
+  }
   else if (hours >= 12 && hours < 15) {
     Good_Wellcome_text = "Good Afternoon 👋";
-  } 
-  else if (hours >= 15 && hours < 18){
+  }
+  else if (hours >= 15 && hours < 18) {
     Good_Wellcome_text = "Good Evening 👋";
   }
   else {
     Good_Wellcome_text = "Good Night 👋";
-  } 
-  
+  }
+
   // display WellCome Text in the page 
   goodWelcomeText.innerHTML = Good_Wellcome_text;
 
@@ -128,7 +128,7 @@ setInterval(clock, 1000);
 
 geoFindMe();
 
-function geoFindMe() {  
+function geoFindMe() {
 
   function success(position) {
     latitude = position.coords.latitude;
@@ -146,7 +146,7 @@ function geoFindMe() {
 
   if (!navigator.geolocation) {
     alert("Geolocation is not supported by your browser");
-  } 
+  }
   else {
     navigator.geolocation.getCurrentPosition(success, error);
   }
@@ -158,11 +158,11 @@ function geoFindMe() {
 // ==============================================================================================================================================================//
 // ==============================================================================================================================================================//
 
-    
+
 
 // Call The API
-const api = { 
-  key: "701c8c6e75143284523611d549c79661",
+const api = {
+  key: "",
 }
 
 
@@ -185,7 +185,7 @@ function getWeather(lan, lon) {
 function displayWeather(weather) {
   locationDisplay.innerHTML = `${weather.name}, ${weather.sys.country}`;
 
-  weatherTemperature.innerHTML = `${Math.round ( (weather.main.temp) - 273.15 ) }°C`;
+  weatherTemperature.innerHTML = `${Math.round((weather.main.temp) - 273.15)}°C`;
   weatherDescription.innerHTML = weather.weather[0].description;
 
   // if (weather.weather[0].description == "mist || Few clouds || Scattered clouds || Broken clouds || Overcast clouds || Clear sky") {
@@ -204,8 +204,8 @@ function displayWeather(weather) {
   weatherVisibility.innerHTML = `${weather.visibility / 1000} km`;
   weatherHumidity.innerHTML = `${weather.main.humidity}%`;
 
-  const feelsTemperature = Math.round ( (weather.main.feels_like) - 273.15 );
-  sunTemperature.innerHTML  = `${feelsTemperature}°C`;
+  const feelsTemperature = Math.round((weather.main.feels_like) - 273.15);
+  sunTemperature.innerHTML = `${feelsTemperature}°C`;
 
   const sunrise = weather.sys.sunrise;
   const date = new Date(sunrise * 1000);
@@ -253,20 +253,20 @@ function displayUVIndex(uvIndex) {
   }
 
 
-const date = new Date();
-const localTime = date.toISOString().split('T')[0];
-const data = uvIndex;
-const filteredForecast = data.forecast.filter(entry => entry.time.startsWith(localTime));
-const uviArray = filteredForecast.map(entry => entry.uvi);
+  const date = new Date();
+  const localTime = date.toISOString().split('T')[0];
+  const data = uvIndex;
+  const filteredForecast = data.forecast.filter(entry => entry.time.startsWith(localTime));
+  const uviArray = filteredForecast.map(entry => entry.uvi);
 
-const uviMin = Math.min(...uviArray);
-uvIndexLowToday.innerHTML = uviMin;
+  const uviMin = Math.min(...uviArray);
+  uvIndexLowToday.innerHTML = uviMin;
 
-const uviMax = Math.max(...uviArray);
-uvIndexHighToday.innerHTML = uviMax;
+  const uviMax = Math.max(...uviArray);
+  uvIndexHighToday.innerHTML = uviMax;
 
-const uviAvg = Math.round(uviArray.reduce((sum, currentElement) => sum + currentElement, 0) / uviArray.length);
-uvIndexMediumToday.innerHTML = uviAvg;
+  const uviAvg = Math.round(uviArray.reduce((sum, currentElement) => sum + currentElement, 0) / uviArray.length);
+  uvIndexMediumToday.innerHTML = uviAvg;
 
 
   // This Part is only for Sri Lanka UV Index History.
@@ -276,36 +276,36 @@ uvIndexMediumToday.innerHTML = uviAvg;
 
   var UVMorningTotal = 0;
   var UVMorning = [];
-    for (let i = 6; i < 10; i++) {
-        UVMorning.push(uvIndex.forecast[i].uvi);
-        UVMorningTotal += uvIndex.forecast[i].uvi;
-    }
+  for (let i = 6; i < 10; i++) {
+    UVMorning.push(uvIndex.forecast[i].uvi);
+    UVMorningTotal += uvIndex.forecast[i].uvi;
+  }
   var UVMorningAvg = Math.round(UVMorningTotal / UVMorning.length);
   if (UVMorningAvg == 0) {
-   UVMorningAvg = Math.max(...UVMorning);
-   UVMorningAvg = UVMorningAvg * 10;
+    UVMorningAvg = Math.max(...UVMorning);
+    UVMorningAvg = UVMorningAvg * 10;
   }
 
 
   var UVAfternoonTotal = 0;
   var UVAfternoon = [];
-    for (let i = 10; i < 14; i++) {
-      UVAfternoon.push(uvIndex.forecast[i].uvi);
-      UVAfternoonTotal += uvIndex.forecast[i].uvi;
-    }
+  for (let i = 10; i < 14; i++) {
+    UVAfternoon.push(uvIndex.forecast[i].uvi);
+    UVAfternoonTotal += uvIndex.forecast[i].uvi;
+  }
   var UVAfternoonAvg = Math.round(UVAfternoonTotal / UVAfternoon.length);
   if (UVAfternoonAvg == 0) {
-   UVAfternoonAvg = Math.max(...UVAfternoon);
-   UVAfternoonAvg = UVAfternoonAvg * 10;
+    UVAfternoonAvg = Math.max(...UVAfternoon);
+    UVAfternoonAvg = UVAfternoonAvg * 10;
   }
 
 
   var UVEveningTotal = 0;
   var UVEvening = [];
-    for (let i = 14; i < 18; i++) {
-      UVEvening.push(uvIndex.forecast[i].uvi);
-      UVEveningTotal += uvIndex.forecast[i].uvi;
-    }
+  for (let i = 14; i < 18; i++) {
+    UVEvening.push(uvIndex.forecast[i].uvi);
+    UVEveningTotal += uvIndex.forecast[i].uvi;
+  }
   var UVEveningAvg = Math.round(UVEveningTotal / UVEvening.length);
   if (UVEveningAvg == 0) {
     UVEveningAvg = Math.max(...UVEvening);
@@ -315,10 +315,10 @@ uvIndexMediumToday.innerHTML = uviAvg;
 
   var UVNightTotal = 0;
   var UVNight = [];
-    for (let i = 18; i < 22; i++) {
-      UVNight.push(uvIndex.forecast[i].uvi);
-      UVNightTotal += uvIndex.forecast[i].uvi;
-    }
+  for (let i = 18; i < 22; i++) {
+    UVNight.push(uvIndex.forecast[i].uvi);
+    UVNightTotal += uvIndex.forecast[i].uvi;
+  }
   var UVNightAvg = Math.round(UVNightTotal / UVNight.length);
   if (UVNightAvg == 0) {
     UVNightAvg = Math.max(...UVNight);
@@ -326,7 +326,7 @@ uvIndexMediumToday.innerHTML = uviAvg;
   }
 
 
-  uvIndexTodayMorning.innerHTML = UVMorningAvg; 
+  uvIndexTodayMorning.innerHTML = UVMorningAvg;
   uvIndexTodayAfternoon.innerHTML = UVAfternoonAvg;
   uvIndexTodayEvening.innerHTML = UVEveningAvg;
   uvIndexTodayNight.innerHTML = UVNightAvg;
@@ -338,39 +338,39 @@ uvIndexMediumToday.innerHTML = uviAvg;
   gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
   new Chart(ctx, {
-      type: 'line',
-      data: {
-          labels: ['Morning', 'Afternoon', 'Evening', 'Night'],
-          datasets: [{
-              data: [UVMorningAvg, UVAfternoonAvg, UVEveningAvg, UVNightAvg],
-              borderColor: '#FF9421',
-              borderWidth: 2,
-              fill: true,
-              backgroundColor: gradient,
-              tension: 0.4, // Smooth the line
-              pointBackgroundColor: '#FF9421',
-              pointBorderColor: '#FFFFFF',
-              pointBorderWidth: 2,
-              pointRadius: 5,
-          }]
+    type: 'line',
+    data: {
+      labels: ['Morning', 'Afternoon', 'Evening', 'Night'],
+      datasets: [{
+        data: [UVMorningAvg, UVAfternoonAvg, UVEveningAvg, UVNightAvg],
+        borderColor: '#FF9421',
+        borderWidth: 2,
+        fill: true,
+        backgroundColor: gradient,
+        tension: 0.4, // Smooth the line
+        pointBackgroundColor: '#FF9421',
+        pointBorderColor: '#FFFFFF',
+        pointBorderWidth: 2,
+        pointRadius: 5,
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: false,
+        }
       },
-      options: {
-          responsive: true,
-          maintainAspectRatio: false,
-          plugins: {
-              legend: {
-                  display: false,
-              }
-          },
-          scales: {
-              x: {
-                  display: false,
-              },
-              y: {
-                  display: false,
-              }
-          }
+      scales: {
+        x: {
+          display: false,
+        },
+        y: {
+          display: false,
+        }
       }
+    }
   });
 
 }
@@ -410,7 +410,7 @@ function displayAirIndex(airIndex) {
     airIndexQualitativeName.innerHTML = "Hazardous";
   }
 
-  airIndexCarbonMonoxide.innerHTML = `${Math.round(airIndex.list[0].components.co / 10)} %`; 
+  airIndexCarbonMonoxide.innerHTML = `${Math.round(airIndex.list[0].components.co / 10)} %`;
   airIndexNitrogenMonoxide.innerHTML = `${Math.round([airIndex.list[0].components.no2 / 10] * 10)} %`;
   airIndexOzone.innerHTML = `${Math.round(airIndex.list[0].components.o3 / 10)} %`;
 }
@@ -430,7 +430,7 @@ const time = Math.floor(tomorrow.getTime() / 1000);
 // Get The Tomorrow Weather Data
 function getTomorrowWeather(lan, lon) {
   fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${lan}&lon=${lon}&appid=${api.key}`)
-  
+
     .then(tomorrowWeather => {
       return tomorrowWeather.json();
     }).then(displayTomorrowWeather);
@@ -438,7 +438,7 @@ function getTomorrowWeather(lan, lon) {
 
 // Display The Tomorrow Weather Data
 function displayTomorrowWeather(tomorrowWeather) {
-  tomorrowWeatherTemperature.innerHTML = `${Math.round(tomorrowWeather.daily[0].temp.min - 273.15 )}°C`;
+  tomorrowWeatherTemperature.innerHTML = `${Math.round(tomorrowWeather.daily[0].temp.min - 273.15)}°C`;
   tomorrowWeatherDescription.innerHTML = tomorrowWeather.daily[0].summary;
 }
 
