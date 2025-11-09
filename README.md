@@ -69,7 +69,7 @@
     │   ├── UpDate.txt
     │   ├── index.html
     │   └── index.js
-    ├── Drawing App
+    ├── Drawing_App
     │   ├── Style.css
     │   ├── UpDate.txt
     │   ├── index.html
@@ -82,17 +82,17 @@
     │   ├── index.css
     │   ├── index.html
     │   └── main.js
-    ├── Password Generator
+    ├── Password_Generator
     │   ├── Index.html
     │   ├── Index.js
     │   └── UpDate.txt
     ├── README.md
-    ├── Simpel Code Editor
+    ├── Simpel_Code_Editor
     │   ├── Index.html
     │   ├── UpDate.txt
     │   ├── index.js
     │   └── style.css
-    ├── Speech Recognizer
+    ├── Speech_Recognizer
     │   ├── Index.html
     │   ├── UpDate.txt
     │   └── icons8-audio-wave.gif
@@ -107,12 +107,12 @@
     │   ├── index.js
     │   ├── style.css
     │   └── validation.html
-    ├── Validation User From
+    ├── Validation_User_From
     │   ├── Medal_free_vector_icons_designed_by_Freepik-removebg-preview.png
     │   ├── UpDate.txt
     │   ├── Validation User From.html
     │   └── index.js
-    ├── Wether Report web site
+    ├── Wether_Report_web_site
     │   ├── .gitattributes
     │   ├── .hintrc
     │   ├── Gif
@@ -120,7 +120,7 @@
     │   ├── Index.html
     │   ├── README.md
     │   └── index.js
-    ├── Word Counter
+    ├── Word_Counter
     │   ├── Index.js
     │   ├── Style.css
     │   ├── UpDate.txt
@@ -171,66 +171,66 @@
 			</table>
 		</blockquote>
 	</details>
-	<details> <!-- Simpel Code Editor Submodule -->
-		<summary><b>Simpel Code Editor</b></summary>
+	<details> <!-- Simpel_Code_Editor Submodule -->
+		<summary><b>Simpel_Code_Editor</b></summary>
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel Code Editor/UpDate.txt'>UpDate.txt</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel_Code_Editor/UpDate.txt'>UpDate.txt</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel Code Editor/style.css'>style.css</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel_Code_Editor/style.css'>style.css</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel Code Editor/index.js'>index.js</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel_Code_Editor/index.js'>index.js</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel Code Editor/Index.html'>Index.html</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Simpel_Code_Editor/Index.html'>Index.html</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
 		</blockquote>
 	</details>
-	<details> <!-- Password Generator Submodule -->
-		<summary><b>Password Generator</b></summary>
+	<details> <!-- Password_Generator Submodule -->
+		<summary><b>Password_Generator</b></summary>
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Password Generator/UpDate.txt'>UpDate.txt</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Password_Generator/UpDate.txt'>UpDate.txt</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Password Generator/Index.js'>Index.js</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Password_Generator/Index.js'>Index.js</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Password Generator/Index.html'>Index.html</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Password_Generator/Index.html'>Index.html</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
 		</blockquote>
 	</details>
-	<details> <!-- Drawing App Submodule -->
-		<summary><b>Drawing App</b></summary>
+	<details> <!-- Drawing_App Submodule -->
+		<summary><b>Drawing_App</b></summary>
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing App/UpDate.txt'>UpDate.txt</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing_App/UpDate.txt'>UpDate.txt</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing App/Style.css'>Style.css</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing_App/Style.css'>Style.css</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing App/script.js'>script.js</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing_App/script.js'>script.js</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing App/index.html'>index.html</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Drawing_App/index.html'>index.html</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
@@ -292,16 +292,16 @@
 			</table>
 		</blockquote>
 	</details>
-	<details> <!-- Speech Recognizer Submodule -->
-		<summary><b>Speech Recognizer</b></summary>
+	<details> <!-- Speech_Recognizer Submodule -->
+		<summary><b>Speech_Recognizer</b></summary>
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Speech Recognizer/UpDate.txt'>UpDate.txt</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Speech_Recognizer/UpDate.txt'>UpDate.txt</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Speech Recognizer/Index.html'>Index.html</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Speech_Recognizer/Index.html'>Index.html</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
@@ -349,24 +349,24 @@
 			</table>
 		</blockquote>
 	</details>
-	<details> <!-- Word Counter Submodule -->
-		<summary><b>Word Counter</b></summary>
+	<details> <!-- Word_Counter Submodule -->
+		<summary><b>Word_Counter</b></summary>
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word Counter/UpDate.txt'>UpDate.txt</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word_Counter/UpDate.txt'>UpDate.txt</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word Counter/Style.css'>Style.css</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word_Counter/Style.css'>Style.css</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word Counter/Word Counter.html'>Word Counter.html</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word_Counter/Word Counter.html'>Word Counter.html</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word Counter/Index.js'>Index.js</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Word_Counter/Index.js'>Index.js</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
@@ -391,20 +391,20 @@
 			</table>
 		</blockquote>
 	</details>
-	<details> <!-- Wether Report web site Submodule -->
-		<summary><b>Wether Report web site</b></summary>
+	<details> <!-- Wether_Report_web_site Submodule -->
+		<summary><b>Wether_Report_web_site</b></summary>
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Wether Report web site/index.js'>index.js</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Wether_Report_web_site/index.js'>index.js</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Wether Report web site/Index.html'>Index.html</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Wether_Report_web_site/Index.html'>Index.html</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Wether Report web site/.hintrc'>.hintrc</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Wether_Report_web_site/.hintrc'>.hintrc</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
@@ -433,20 +433,20 @@
 			</table>
 		</blockquote>
 	</details>
-	<details> <!-- Validation User From Submodule -->
-		<summary><b>Validation User From</b></summary>
+	<details> <!-- Validation_User_From Submodule -->
+		<summary><b>Validation_User_From</b></summary>
 		<blockquote>
 			<table>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Validation User From/UpDate.txt'>UpDate.txt</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Validation_User_From/UpDate.txt'>UpDate.txt</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Validation User From/Validation User From.html'>Validation User From.html</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Validation_User_From/Validation User From.html'>Validation User From.html</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			<tr>
-				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Validation User From/index.js'>index.js</a></b></td>
+				<td><b><a href='https://github.com/HimanthaThathsara/JavaScript-Learning-Projects/blob/master/Validation_User_From/index.js'>index.js</a></b></td>
 				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
